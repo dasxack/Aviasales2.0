@@ -11,7 +11,6 @@ const App = () => {
       </header>
       <section className={classes['main-container']}>
         <div className={classes['main-legs']}></div>
-        <h1>hello World</h1>
         <Filters />
         <Main />
         <div className={classes['main-legs']}></div>
