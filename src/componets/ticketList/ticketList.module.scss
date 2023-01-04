@@ -1,0 +1,38 @@
+.main-tickets {
+  margin-top: 20px;
+}
+.show-more {
+  margin-bottom: 50px;
+  max-width: 502px;
+}
+.show-more_button {
+  width: 100%;
+  height: 50px;
+  background: #2196f3;
+  border-radius: 5px;
+  border: 0px;
+  color: #ffffff;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+}
+.show-more_button:hover {
+  background: #62ace9;
+}
+@media (max-width: 557px) {
+  .show-more_button {
+    width: 100%;
+    height: 50px;
+    background: #2196f3;
+    border-radius: 5px;
+    border: 0px;
+    color: #ffffff;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 7px;
+    line-height: 15px;
+  }
+}

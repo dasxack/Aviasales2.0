@@ -1,0 +1,12 @@
+export const CHECKBOX_OTHER = 'CHECKBOX_OTHER';
+export const CHECKBOX_All = 'CHECKBOX_All';
+export const TICKET_LOAD = 'TICKET_LOAD';
+export const LOADER_DISPAY_ON = 'LOADER_DISPAY_ON';
+export const LOADER_DISPAY_OFF = 'LOADER_DISPAY_OFF';
+export const SLICE_TICKET = 'SLICE_TICKET';
+export const SEARCH_ID = 'SEARCH_ID';
+export const CHEAP_TICKETS = 'CHEAP_TICKETS';
+export const FAST_TICKETS = 'FAST_TICKETS';
+export const OPTIMAL_TICKETS = 'OPTIMAL_TICKETS';
+export const ERROR_ON = 'ERROR_ON';
+export const ERROR_OFF = 'ERROR_OFF';

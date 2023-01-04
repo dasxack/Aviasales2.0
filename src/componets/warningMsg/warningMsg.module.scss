@@ -1,0 +1,17 @@
+$blue-background: #2196f3;
+$card-br-radius: 5px;
+$obj-shadow: 0px 0px 8px 4px rgba(150, 155, 159, 0.2);
+.warning_msg {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding: 15px 10px 15px 50px;
+  color: #9f6000;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-color: white;
+  background-image: url('https://i.imgur.com/Z8q7ww7.png');
+  border-radius: $card-br-radius;
+  box-shadow: $obj-shadow;
+  margin-bottom: 20px;
+}

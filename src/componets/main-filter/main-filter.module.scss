@@ -1,0 +1,75 @@
+.filter-button {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  color: #4a4a4a;
+  width: 167px;
+  height: 50px;
+  border: 1px solid #dfe5ec;
+  background: #ffffff;
+  padding: 0;
+}
+
+.filter-button:first-child {
+  border-radius: 3px 0px 0px 3px;
+}
+.filter-button:last-child {
+  border-radius: 0px 3px 3px 0px;
+}
+.filter-button:hover {
+  background-color: #2196f3;
+  color: #ffffff;
+}
+.filter-button:focus {
+  background-color: #2196f3;
+  color: #ffffff;
+}
+@media (max-width: 760px) {
+  .filter-button {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    color: #4a4a4a;
+    width: 130px;
+    height: 50px;
+    border: 1px solid #dfe5ec;
+    background: #ffffff;
+    padding: 0;
+  }
+}
+@media (max-width: 659px) {
+  .filter-button {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 20px;
+    color: #4a4a4a;
+    width: 100px;
+    height: 30px;
+    border: 1px solid #dfe5ec;
+    background: #ffffff;
+    padding: 0;
+    white-space: nowrap;
+  }
+}
+@media (max-width: 554px) {
+  .filter-button {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 7px;
+    line-height: 20px;
+    color: #4a4a4a;
+    width: 80px;
+    height: 30px;
+    border: 1px solid #dfe5ec;
+    background: #ffffff;
+    padding: 0;
+    white-space: nowrap;
+  }
+}
