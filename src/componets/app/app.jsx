@@ -7,13 +7,13 @@ const App = () => {
   return (
     <section className={classes.aviasales}>
       <header>
-        {/* test */}
         <span className={classes['logo-container']}></span>
       </header>
       <section className={classes['main-container']}>
         <div className={classes['main-legs']}></div>
-        <Filters />
-        <Main />
+        <h1>hello World</h1>
+        {/* <Filters />
+        <Main /> */}
         <div className={classes['main-legs']}></div>
       </section>
     </section>
