@@ -1,15 +1,21 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { checkboxAllFilter, checkboxOtherFilter } from '../../redux/actions';
-// import classes from './filters.module.scss';
+import classes from './filters.module.scss';
 import PropTypes from 'prop-types';
 const Filters = (props) => {
   const element = props.checkboxes.map((el) => {
     return (
-      <div key={el.id}>
-        <label>
-          <input type="checkbox" id={el.id} checked={el.checked} onChange={props.changeChecked} />
-          <span></span>
+      <div className={classes.filters_input} key={el.id}>
+        <label className={classes.check}>
+          <input
+            type="checkbox"
+            className={classes.check__input}
+            id={el.id}
+            checked={el.checked}
+            onChange={props.changeChecked}
+          />
+          <span className={classes.check__box}></span>
           {el.value}
         </label>
       </div>
@@ -17,8 +23,8 @@ const Filters = (props) => {
   });
 
   return (
-    <div>
-      <span>КОЛИЧЕСТВО ПЕРЕСАДОК</span>
+    <div className={classes.filters}>
+      <span className={classes.filters_title}>КОЛИЧЕСТВО ПЕРЕСАДОК</span>
       {element}
     </div>
   );

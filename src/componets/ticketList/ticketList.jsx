@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getSearchId, sliceTicket, getTickets } from '../../redux/actions';
 import WarningMsg from '../warningMsg';
-// import classes from './ticketList.module.scss';
+import classes from './ticketList.module.scss';
 import Ticket from '../ticket';
 import { filterTicket } from '../../utilites/filterTicket';
 import Spinner from '../spinner/spinner';
@@ -44,13 +44,15 @@ const TicketList = () => {
   }, [stopTicket, searchId, arrayTicket, checkBox]);
 
   return (
-    <div>
+    <div className={classes['main-tickets']}>
       <Spinner />
       {error ? <ErrorMsg /> : null}
       {elems.length === 0 && !error && arrayTicket.length !== 0 ? <WarningMsg /> : elems.slice(0, sliceNum)}
       {elems.length > sliceNum && (
-        <div>
-          <button onClick={() => dispatch(sliceTicket())}>ПОКАЗАТЬ ЕЩЕ 5 БИЛЕТОВ</button>
+        <div className={classes['show-more']}>
+          <button className={classes['show-more_button']} onClick={() => dispatch(sliceTicket())}>
+            ПОКАЗАТЬ ЕЩЕ 5 БИЛЕТОВ
+          </button>
         </div>
       )}
     </div>
