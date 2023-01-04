@@ -1,7 +1,7 @@
-import React from 'react'
-import classes from './app.module.scss'
-import Filters from '../filters'
-import Main from '../main'
+import React from 'react';
+import classes from './app.module.scss';
+import Filters from '../filters';
+import Main from '../main';
 
 const App = () => {
   return (
@@ -17,6 +17,6 @@ const App = () => {
         <div className={classes['main-legs']}></div>
       </section>
     </section>
-  )
-}
-export default App
+  );
+};
+export default App;
