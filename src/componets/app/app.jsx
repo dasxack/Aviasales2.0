@@ -1,19 +1,19 @@
 import React from 'react';
-import classes from './app.module.scss';
+// import classes from './app.module.scss';
 import Filters from '../filters';
 import Main from '../main';
 
 const App = () => {
   return (
-    <section className={classes.aviasales}>
+    <section>
       <header>
-        <span className={classes['logo-container']}></span>
+        <span></span>
       </header>
-      <section className={classes['main-container']}>
-        <div className={classes['main-legs']}></div>
+      <section>
+        <div></div>
         <Filters />
         <Main />
-        <div className={classes['main-legs']}></div>
+        <div></div>
       </section>
     </section>
   );

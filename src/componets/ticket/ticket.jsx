@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './ticket.module.scss';
+// import classes from './ticket.module.scss';
 import { enumeration } from '../../utilites/enumeration';
 import { getArrivalTime, getDepartureTime, getTravelTime } from '../../utilites/date';
 import PropTypes from 'prop-types';
@@ -7,25 +7,25 @@ const Ticket = (props) => {
   const { price, carrier, segments } = props;
   const priceStr = String(price).replace(/(\d)(?=(\d{3})+$)/g, '$1 ');
   return (
-    <div className={classes.ticket}>
-      <div className={classes.price_logo}>
-        <div className={classes.price}> {`${priceStr} \u20bd`} </div>
-        <img className={classes.logo} alt="logo" src={`//pics.avs.io/99/36/${carrier}.png`} />
+    <div>
+      <div>
+        <div> {`${priceStr} \u20bd`} </div>
+        <img alt="logo" src={`//pics.avs.io/99/36/${carrier}.png`} />
       </div>
       {segments.map((item) => (
-        <div className={classes.information} key={item.date}>
-          <div className={`${classes.text} ${classes.gray_text}`}>
+        <div key={item.date}>
+          <div>
             {item.origin}-{item.destination}
           </div>
-          <div className={`${classes.text} ${classes.gray_text}`}>В ПУТИ</div>
-          <div className={`${classes.text} ${classes.gray_text}`}>
+          <div>В ПУТИ</div>
+          <div>
             {item.stops.length} {enumeration(item.stops.length)}
           </div>
-          <div className={classes.text}>
+          <div>
             {getDepartureTime(item.date)} - {getArrivalTime(item.date, item.duration)}
           </div>
-          <div className={classes.text}> {getTravelTime(item.duration)}</div>
-          <div className={classes.text}> {item.stops.join(', ')}</div>
+          <div> {getTravelTime(item.duration)}</div>
+          <div> {item.stops.join(', ')}</div>
         </div>
       ))}
     </div>
