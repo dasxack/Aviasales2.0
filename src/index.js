@@ -15,10 +15,7 @@ import { Provider } from 'react-redux';
 //   console.log('Middleware', store.getState())
 //   return result
 // }
-const store = createStore(
-  rootReducer,
-  compose(applyMiddleware(thunk), window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
-);
+const store = createStore(rootReducer, compose(applyMiddleware(thunk)));
 const container = document.getElementById('root');
 const root = createRoot(container);
 root.render(
