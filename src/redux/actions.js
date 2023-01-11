@@ -12,7 +12,7 @@ import {
   ERROR_OFF,
   ERROR_ON,
 } from './types';
-
+import getTotalFlyDuration from '../utilites/getTotalFlyDuration';
 export function checkboxOtherFilter(e) {
   return {
     type: CHECKBOX_OTHER,
@@ -99,7 +99,9 @@ export function getTickets(id, checked) {
 
       dispatch({
         type: TICKET_LOAD,
-        data: res.tickets,
+        data: res.tickets.sort((previous, next) =>
+          getTotalFlyDuration(previous) + previous.price > getTotalFlyDuration(next) + next.price ? 1 : -1
+        ),
         stop: res.stop,
         checkboxes: checked,
       });

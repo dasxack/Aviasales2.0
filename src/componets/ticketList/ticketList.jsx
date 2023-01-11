@@ -8,6 +8,8 @@ import Ticket from '../ticket';
 import { filterTicket } from '../../utilites/filterTicket';
 import Spinner from '../spinner/spinner';
 import ErrorMsg from '../error';
+import { optimalTickets } from '../../redux/actions';
+
 const TicketList = () => {
   const dispatch = useDispatch();
 

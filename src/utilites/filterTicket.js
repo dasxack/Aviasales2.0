@@ -2,6 +2,7 @@ export const filterTicket = (Array, checkBoxes) => {
   if (Array === []) {
     return Array;
   }
+
   let elemsFilter = [];
   for (let i = 1; i < checkBoxes.length; i++) {
     if (checkBoxes[i].checked) {
